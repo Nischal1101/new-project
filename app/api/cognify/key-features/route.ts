@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   // 1) simulate delay of 5second as well
-  // await new Promise((resolve) => setTimeout(resolve, 5000));
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   return NextResponse.json({
     features: {
       cognitive: {
