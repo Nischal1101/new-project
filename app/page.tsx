@@ -1,11 +1,10 @@
-import FeaturesSectionServer from "@/components/FeaturesSectionServer";
-import Loading from "@/components/Loading";
 import { Suspense } from "react";
+import FeaturesSectionServer from "@/components/FeaturesSectionServer";
+import FeaturesSectionSkeleton from "@/components/FeaturesSectionSkeleton";
 
-export default async function Home() {
-  
+export default function Home() {
   return (
-    <main className="flex flex-col gap-[68px] pt-[100px]">
+    <main className="flex flex-col gap-[88px] py-[128px]">
       <section>
         <p className="text-2xl font-normal leading-[130%] text-center">
           Key features
@@ -15,7 +14,7 @@ export default async function Home() {
         </h1>
       </section>
 
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<FeaturesSectionSkeleton />}>
         <FeaturesSectionServer />
       </Suspense>
     </main>
