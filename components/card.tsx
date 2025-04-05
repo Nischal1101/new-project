@@ -1,9 +1,9 @@
-import { ReturnResponse } from "@/types";
+import { IReturnResponse, selectedFeature } from "@/types";
 import { RefObject } from "react";
 
 interface ICardProps {
-  selectedFeature: string;
-  data: ReturnResponse;
+  selectedFeature: selectedFeature;
+  data: IReturnResponse;
   cardRef: RefObject<HTMLDivElement | null>;
 }
 const Card = ({ selectedFeature, data, cardRef }: ICardProps) => {

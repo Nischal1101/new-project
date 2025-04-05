@@ -3,7 +3,7 @@ export interface FeaturePoint {
   points: string[];
 }
 
-export interface ReturnResponse {
+export interface IReturnResponse {
   features: {
     cognitive: FeaturePoint;
     ai_problem_solving: FeaturePoint;
@@ -15,3 +15,4 @@ export interface ISvgProps {
   className?: string;
   selected: boolean;
 }
+export type selectedFeature = keyof IReturnResponse["features"];

@@ -1,6 +1,6 @@
 "use client";
 
-import { ReturnResponse } from "@/types";
+import { IReturnResponse, selectedFeature } from "@/types";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import {
@@ -16,8 +16,9 @@ import {
 } from "@/assets";
 import Card from "./card";
 
-export default function FeaturesSection({ data }: { data: ReturnResponse }) {
-  const [selectedFeature, setSelectedFeature] = useState<string | null>(null);
+export default function FeaturesSection({ data }: { data: IReturnResponse }) {
+  const [selectedFeature, setSelectedFeature] =
+    useState<selectedFeature | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

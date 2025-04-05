@@ -1,4 +1,4 @@
-import { ReturnResponse } from "@/types";
+import { IReturnResponse } from "@/types";
 import FeaturesSection from "./features-section";
 
 async function getData() {
@@ -10,6 +10,6 @@ async function getData() {
 }
 
 export default async function FeaturesSectionServer() {
-  const data: ReturnResponse = await getData();
+  const data: IReturnResponse = await getData();
   return <FeaturesSection data={data} />;
 }
