@@ -6,9 +6,7 @@ async function getData() {
   try {
     response = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/cognify/key-features`,
-      {
-        method: "GET",
-      }
+      { cache: "no-store" }
     );
   } catch (error) {
     console.log(error);
