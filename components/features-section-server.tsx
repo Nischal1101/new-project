@@ -2,14 +2,26 @@ import { IReturnResponse } from "@/types";
 import FeaturesSection from "./features-section";
 
 async function getData() {
-  const response = await fetch(
-    "http://localhost:3000/api/cognify/key-features",
-    { method: "GET" }
-  );
+  let response;
+  try {
+    response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/cognify/key-features`,
+      {
+        method: "GET",
+      }
+    );
+  } catch (error) {
+    console.log(error);
+  }
+  if (!response) return null;
   return response.json();
 }
 
 export default async function FeaturesSectionServer() {
+  if (!process.env.NEXT_PUBLIC_BASE_API_URL) return null;
   const data: IReturnResponse = await getData();
+  if (!data) {
+    return null;
+  }
   return <FeaturesSection data={data} />;
 }
