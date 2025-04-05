@@ -35,11 +35,13 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
   return (
     <section className="flex justify-center ">
       <div className="flex flex-col justify-between relative">
-        <div
-          className="flex svg-paragraph w-[320px] cursor-pointer"
-          onClick={() => setSelectedFeature("cognitive")}
-        >
-          <Image src={Cognitive} alt="loading cognitive image" />
+        <div className="flex svg-paragraph max-w-[350px] ">
+          <Image
+            src={Cognitive}
+            alt="loading cognitive image"
+            onClick={() => setSelectedFeature("cognitive")}
+            className="cursor-pointer"
+          />
           <p className="paragraph-text">{data.features.cognitive.title}</p>
         </div>
 
@@ -56,11 +58,13 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
           }`}
         />
 
-        <div
-          className="svg-paragraph w-[270px] cursor-pointer"
-          onClick={() => setSelectedFeature("ai_problem_solving")}
-        >
-          <Image src={Ai} alt="loading Ai image" className="fill-red-700" />
+        <div className="svg-paragraph w-[270px]">
+          <Image
+            src={Ai}
+            alt="loading Ai image"
+            onClick={() => setSelectedFeature("ai_problem_solving")}
+            className=" cursor-pointer"
+          />
           <p className="paragraph-text">
             {data.features.ai_problem_solving.title}
           </p>
@@ -107,11 +111,13 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
       </div>
 
       <div className="flex flex-col justify-between relative">
-        <div
-          className="svg-paragraph w-[270px] items-end cursor-pointer"
-          onClick={() => setSelectedFeature("dynamic_paths")}
-        >
-          <Image src={Dynamic} alt="loading dynamic image" />
+        <div className="svg-paragraph w-[270px] items-end">
+          <Image
+            src={Dynamic}
+            alt="loading dynamic image"
+            onClick={() => setSelectedFeature("dynamic_paths")}
+            className="cursor-pointer"
+          />
           <p className="paragraph-text text-end">
             {data.features.dynamic_paths.title}
           </p>
@@ -130,11 +136,13 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
           }`}
         />
 
-        <div
-          className="svg-paragraph w-[270px] items-end cursor-pointer"
-          onClick={() => setSelectedFeature("ai_mentor")}
-        >
-          <Image src={Evolving} alt="loading skull image" />
+        <div className="svg-paragraph w-[270px] items-end">
+          <Image
+            src={Evolving}
+            alt="loading skull image"
+            onClick={() => setSelectedFeature("ai_mentor")}
+            className=" cursor-pointer"
+          />
           <p className="paragraph-text text-end">
             {data.features.ai_mentor.title}
           </p>
