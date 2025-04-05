@@ -21,8 +21,14 @@ export default function FeaturesSectionSkeleton() {
           <div className="ml-3 h-6 w-full bg-gray-200 rounded animate-pulse"></div>
         </div>
 
-        <TopLeft className="absolute top-[220px] right-0 fill-[#E7E7E7]" />
-        <BottomLeft className="absolute bottom-[220px] right-0 fill-[#E7E7E7]" />
+        <TopLeft
+          selected={false}
+          className="absolute top-[220px] right-0 fill-[#E7E7E7]"
+        />
+        <BottomLeft
+          selected={false}
+          className="absolute bottom-[220px] right-0 fill-[#E7E7E7]"
+        />
 
         <div className="svg-paragraph w-[270px]">
           <Image src={Ai} alt="AI image" priority />
@@ -42,8 +48,14 @@ export default function FeaturesSectionSkeleton() {
           <div className=" h-6 w-full bg-gray-200 rounded animate-pulse fill-[#E7E7E7]"></div>
         </div>
 
-        <TopRight className="absolute top-[220px] left-0 fill-[#E7E7E7]" />
-        <BottomRight className="absolute bottom-[220px] left-0 fill-[#E7E7E7]" />
+        <TopRight
+          selected={false}
+          className="absolute top-[220px] left-0 fill-[#E7E7E7]"
+        />
+        <BottomRight
+          selected={false}
+          className="absolute bottom-[220px] left-0 fill-[#E7E7E7]"
+        />
 
         <div className="svg-paragraph w-[270px] items-end">
           <Image src={Evolving} alt="evolving image" priority />

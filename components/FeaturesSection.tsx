@@ -44,15 +44,15 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
         </div>
 
         <TopLeft
+          selected={selectedFeature === "cognitive"}
           className={`absolute top-[220px] right-0 ${
-            selectedFeature === "cognitive" ? "fill-blue-500" : "fill-gray-300"
+            selectedFeature === "cognitive" ? "" : "fill-gray-300"
           }`}
         />
         <BottomLeft
+          selected={selectedFeature === "ai_problem_solving"}
           className={`absolute bottom-[220px] right-0 ${
-            selectedFeature === "ai_problem_solving"
-              ? "fill-blue-500"
-              : "fill-gray-300"
+            selectedFeature === "ai_problem_solving" ? "" : "fill-gray-300"
           }`}
         />
 
@@ -118,15 +118,15 @@ export default function FeaturesSection({ data }: { data: ReturnResponse }) {
         </div>
 
         <TopRight
+          selected={selectedFeature === "dynamic_paths"}
           className={`absolute top-[220px] left-0 ${
-            selectedFeature === "dynamic_paths"
-              ? "fill-blue-500"
-              : "fill-[#E7E7E7]"
+            selectedFeature === "dynamic_paths" ? "" : "fill-[#E7E7E7]"
           }`}
         />
         <BottomRight
+          selected={selectedFeature === "ai_mentor"}
           className={`absolute bottom-[220px] left-0 ${
-            selectedFeature === "ai_mentor" ? "fill-blue-500" : "fill-[#E7E7E7]"
+            selectedFeature === "ai_mentor" ? "" : "fill-[#E7E7E7]"
           }`}
         />
 
