@@ -1,5 +1,5 @@
 import { ReturnResponse } from "@/types";
-import FeaturesSection from "./FeaturesSection";
+import FeaturesSection from "./features-section";
 
 async function getData() {
   const response = await fetch(

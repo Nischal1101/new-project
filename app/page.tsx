@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import FeaturesSectionServer from "@/components/FeaturesSectionServer";
-import FeaturesSectionSkeleton from "@/components/FeaturesSectionSkeleton";
+import FeaturesSectionServer from "@/components/features-section-server";
+import FeaturesSectionSkeleton from "@/components/features-section-skeleton";
 
 export default function Home() {
   return (

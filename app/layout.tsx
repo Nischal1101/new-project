@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${hostGrotesk.variable} ${exensaGrotest.variable} font-main text-primary antialiased`}
+        className={` ${hostGrotesk.className} ${exensaGrotest.variable} text-primary antialiased`}
       >
         {children}
       </body>

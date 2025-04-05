@@ -15,7 +15,7 @@ export default function FeaturesSectionSkeleton() {
   return (
     <section className="flex justify-center">
       <div className="flex flex-col justify-between relative">
-        <div className="flex svg-paragraph w-[320px]">
+        <div className="flex svg-paragraph w-[350px]">
           <Image src={Cognitive} alt="cognitive image" priority />
           <div className="ml-3 h-6 w-full bg-gray-200 rounded animate-pulse"></div>
           <div className="ml-3 h-6 w-full bg-gray-200 rounded animate-pulse"></div>
