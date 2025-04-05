@@ -1,10 +1,9 @@
+import { ISvgProps } from "@/types";
+
 const BottomRight = ({
   className,
   selected,
-}: {
-  className: string;
-  selected: boolean;
-}) => {
+}: ISvgProps) => {
   return (
     <svg
       width="226"

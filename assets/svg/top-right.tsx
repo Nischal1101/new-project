@@ -1,10 +1,6 @@
-const TopRight = ({
-  className,
-  selected,
-}: {
-  className: string;
-  selected: boolean;
-}) => {
+import { ISvgProps } from "@/types";
+
+const TopRight = ({ className, selected }: ISvgProps) => {
   return (
     <svg
       width="169"

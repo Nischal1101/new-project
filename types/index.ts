@@ -11,3 +11,7 @@ export interface ReturnResponse {
     ai_mentor: FeaturePoint;
   };
 }
+export interface ISvgProps {
+  className?: string;
+  selected: boolean;
+}

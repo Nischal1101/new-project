@@ -1,10 +1,6 @@
-const BottomLeft = ({
-  className,
-  selected,
-}: {
-  className: string;
-  selected: boolean;
-}) => {
+import { ISvgProps } from "@/types";
+
+const BottomLeft = ({ className, selected }: ISvgProps) => {
   return (
     <>
       <svg
